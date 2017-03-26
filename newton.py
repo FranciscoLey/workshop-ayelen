@@ -7,7 +7,7 @@ from numba import jit
 @jit('complex64(complex64)', nopython=True)
 def f(z):
     # z*z*z is faster than z**3
-    return z*z*z*z - 10000
+    return z*z*z*z - 1123413541
 
 
 @jit('complex64(complex64)', nopython=True)
